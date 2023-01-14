@@ -10,17 +10,13 @@ Follow these instructions to create a new environment in AWS. You should have at
 - Node.js
 - Docker
 
-### 1️⃣ Copy this repo
+### 1️⃣ Install and configure your local environment
 
-1. This repo is a [template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template) repo. [Create a new repo from it.](https://github.com/sawyerh/aws-email-workflow-starter/generate)
-
-### 2️⃣ Install and configure your local environment
-
-1. Copy `.env.example` to `.env` and update its values
+1. Copy `.env.example` to `.env` and update its values. Code comments in `.env` will guide you on additional setup steps that may be necessary.
 1. Install dependencies: `npm install`
 1. Update `lib/reader.ts` with your own Lambda code. (Or do an initial run through with what's already in there, which will output some of the email's details to CloudWatch Logs).
 
-### 3️⃣ Manually create an AWS SES rule set
+### 2️⃣ Manually create an AWS SES rule set
 
 SES only allows one rule set to be active at a time. If you already have a rule set, you can use it. Otherwise, you'll need to follow these steps:
 
@@ -28,7 +24,7 @@ SES only allows one rule set to be active at a time. If you already have a rule 
 1. Set the rule set to **Active**.
 1. Set the `SES_RULE_SET_NAME` environment variable in `.env` to the name of the rule set.
 
-### 4️⃣ Deploy to AWS
+### 3️⃣ Deploy to AWS
 
 [AWS CDK](https://aws.amazon.com/cdk/) is used for managing the AWS infrastructure as code. It also handles the compilation and deployment of the Lambda function.
 
@@ -56,7 +52,7 @@ SES only allows one rule set to be active at a time. If you already have a rule 
    npm run deploy
    ```
 
-### 5️⃣ Verify your email domain
+### 4️⃣ Verify your email domain
 
 This step is only necessary if you are using a new domain that has not been verified in AWS SES already.
 

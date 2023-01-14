@@ -44,7 +44,8 @@ The codebase is written in [TypeScript](https://www.typescriptlang.org/) and use
 
 ## 🧰 Setup instructions
 
-**[To setup your initial AWS environment, follow these instructions.](./docs/create-environment.md)**
+1. This is a [template repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template). [Create a new repo from it](https://github.com/sawyerh/aws-email-workflow-starter/generate).
+1. [Follow these instructions to create your AWS environment](./docs/create-environment.md).
 
 ## 🚀 Deploying updates
 
