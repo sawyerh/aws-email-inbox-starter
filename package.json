@@ -9,6 +9,7 @@
   "scripts": {
     "check-types": "tsc --noEmit",
     "test": "jest",
+    "test-watch": "jest --watch",
     "deploy": "cdk deploy --all",
     "diff": "cdk diff"
   },
