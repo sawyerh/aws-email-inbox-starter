@@ -10,7 +10,7 @@
     "module": "commonjs",
     "noFallthroughCasesInSwitch": false,
     "noImplicitReturns": true,
-    "noUnusedLocals": false,
+    "noUnusedLocals": true,
     "noUnusedParameters": false,
     "resolveJsonModule": true,
     "strict": true,

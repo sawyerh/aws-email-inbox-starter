@@ -14,7 +14,7 @@ export const handler: S3Handler = async (
 
   // Put your code below, this is just here to demonstrate the email object.
   // There's a corresponding test in `tests/reader.test.ts` too.
-  const { subject, text, html, attachments } = email;
+  const { subject, text, html } = email;
 
   console.log("Read email:", subject);
   callback(undefined, { subject, text, html });
