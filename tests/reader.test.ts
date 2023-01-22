@@ -10,7 +10,7 @@ jest.mock("@aws-sdk/client-s3");
 const MOCK_CALLBACK = () => {};
 
 const MOCK_EMAIL = readFileSync(
-  path.join(__dirname, "fixtures", "mock-email.txt"),
+  path.join(__dirname, "fixtures", "mock-email.eml"),
   "utf8"
 );
 
